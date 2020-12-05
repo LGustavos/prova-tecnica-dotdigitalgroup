@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*--- CONTENT BANNER ---*/
+
+.content-banner {
+    background-image: url("/image/img.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 520px;
+    width: auto;
+}
+
+.content-banner .header-text {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #546130;
+    font-size: 15px;
+}
+
+.content-banner .header-text h1 {
+    margin-top: 25px;
+}
+
+.content-banner .header-text h4 {
+    color: #2d3b09;
+}
+
+/*--- CONTENT CARDS ---*/
+
+.content-cards {
+    display: flex;
+    flex-direction: column;
+    background-color: #454545;
+    height: 340px;
+    align-items: center;
+}
+
+.cards-info {
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    grid-gap: 80px;
+    width: 90%;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 200px;
+    grid-gap: 10px;
+    margin-top: 40px;
+}
+
+.cards img {
+    width: 200px;
+    height: 120px;
+    border: solid 6px #6f6f6f;
+}
+
+.content-cards .card-text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    color: white;
+}
+
+.cards h4 {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 10px;
+}
+
+/*--- CONTENT INFORMATION ---*/
+
+.content {
+    display: flex;
+    flex-direction: column;
+    background-color: #6f6f6f;
+    align-items: center;
+}
+
+.content-info {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    grid-gap: 40px;
+    width: 90%;
+}
+
+.info-img {
+    width: 400px;
+    height: 200px;
+    border-radius: 50%;
+    background-image: url("../image/img.png");
+    background-size: cover;
+    border: solid 8px #343434;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.info-text {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.info-text p {
+    margin-top: 10px;
+    font-size: 11px;
+}
+
+/*--- CONTENT FOOTER ---*/
+
+.content-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #454545;
+    height: 40px;
+}
+
+.content-footer h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: white;
+}
+
+/*--- RESPONSIVE ---*/
+
+@media(max-width: 425px) {
+    /*--- CONTENT BANNER ---*/
+    .content-banner {
+        background-position: center bottom;
+        background-size: contain;
+        width: auto;
+        height: 380px;
+        background-color: #454545;
+    }
+    .content-banner .header-text {
+        font-family: 'Roboto', sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        font-size: 1rem;
+        text-align: center;
+    }
+    .content-banner .header-text h1 {
+        margin-top: 15px;
+    }
+    .content-banner .header-text h4 {
+        color: white;
+    }
+    /*--- CONTENT CARDS ---*/
+    .content-cards {
+        height: auto;
+    }
+    .cards {
+        padding: 15px 20px;
+        margin-top: 0;
+        max-width: 100%;
+    }
+    .cards-info {
+        display: block;
+        width: auto;
+    }
+    .cards img {
+        width: 100%;
+        height: auto;
+        border: solid 10px #6f6f6f;
+    }
+    .content-cards .card-text {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.6rem;
+        color: white;
+    }
+    .cards h4 {
+        margin-top: 10px;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+    /*--- CONTENT INFORMATION ---*/
+    .content-info {
+        display: block;
+        text-align: center;
+    }
+    .info-img {
+        width: 300px;
+        max-width: 95%;
+        height: 300px;
+        margin: 0 auto;
+    }
+    .info-text {
+        font-family: 'Roboto', sans-serif;
+        color: white;
+        margin-top: 15px;
+        font-size: 1.6rem;
+    }
+    .info-text p {
+        font-size: 1.1rem;
+    }
+    /*--- CONTENT FOOTER ---*/
+    .content-footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #454545;
+        height: 91px;
+    }
+    .content-footer h3 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.6rem;
+        color: white;
+    }
+}
